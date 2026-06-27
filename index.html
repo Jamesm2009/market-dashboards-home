@@ -74,7 +74,7 @@
 
     /* ─── HERO ─── */
     .hero {
-      padding: 5rem max(2rem, calc((100% - 1120px) / 2)) 4rem;
+      padding: 3rem max(2rem, calc((100% - 1120px) / 2)) 3rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3rem;
@@ -443,7 +443,7 @@
   <section class="section">
     <div class="section-header">
       <h2 class="section-title">All Dashboards</h2>
-      <span class="section-count">14 tools</span>
+      <span class="section-count">15 tools</span>
       <a class="guide-btn" href="https://docs.google.com/document/d/1XtL2szzV7X0hWSSrEs7FTpmttEHH1tIT/edit?usp=sharing&ouid=101371495265289212931&rtpof=true&sd=true" target="_blank" rel="noopener">
         <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M7 1v8M4 6l3 3 3-3M2 11h10"/>
@@ -496,6 +496,20 @@
         <span class="card-url">etf.market-dashboards.com</span>
       </a>
 
+      <a class="card" href="https://factors.market-dashboards.com" target="_blank" rel="noopener">
+        <div class="card-meta">
+          <span class="card-tag">Factor Analysis</span>
+          <span class="card-arrow">
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5"/>
+            </svg>
+          </span>
+        </div>
+        <h3 class="card-title">Style & Factor Analysis</h3>
+        <p class="card-desc">Comparing the Absolute and Relative (to SPY) performance of sector and factor style ETFs to see overbought / oversold areas of the market.</p>
+        <span class="card-url">factors.market-dashboards.com/risk-indicator</span>
+      </a>
+
       <a class="card" href="https://etf.market-dashboards.com/risk-indicator" target="_blank" rel="noopener">
         <div class="card-meta">
           <span class="card-tag">Risk Signal</span>
@@ -509,7 +523,6 @@
         <p class="card-desc">A 6-component composite risk signal constructed from ETFs measuring broad market risk appetite. Smoothed with a 12-month z-score to reduce short-term noise.</p>
         <span class="card-url">etf.market-dashboards.com/risk-indicator</span>
       </a>
-
       <a class="card" href="https://risk-indicator-v4.vercel.app/" target="_blank" rel="noopener">
         <div class="card-meta">
           <span class="card-tag">Risk Signal</span>
@@ -538,6 +551,34 @@
         <span class="card-url">regime-tracker.market-dashboards.com</span>
       </a>
 
+      <a class="card" href="https://etf-volume-dashboard.vercel.app/" target="_blank" rel="noopener">
+        <div class="card-meta">
+          <span class="card-tag">ETF Volume</span>
+          <span class="card-arrow">
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5"/>
+            </svg>
+          </span>
+        </div>
+        <h3 class="card-title">ETF Volume tracker</h3>
+        <p class="card-desc">Ranking previous day's volume of a curated list of 70 ETFs against the average for the last 21 trading days and last 5 trading days. Sortable by asset class.</p>
+        <span class="card-url">etf-volume-neon.vercel.app</span>
+      </a>
+
+      <a class="card" href="https://breadth.market-dashboards.com/" target="_blank" rel="noopener">
+        <div class="card-meta">
+          <span class="card-tag">Market Breadth</span>
+          <span class="card-arrow">
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5"/>
+            </svg>
+          </span>
+        </div>
+        <h3 class="card-title">ETF Market Breadth Signal</h3>
+        <p class="card-desc">Using the Matrix Series momentum signal on a set of 21 ETFs with long and short versions, to determine market breadth on a 3 month rolling basis to reflect strength of the market.</p>
+        <span class="card-url">breadth.market-dashboards.com</span>
+      </a>
+      
       <a class="card" href="https://occ.market-dashboards.com/" target="_blank" rel="noopener">
         <div class="card-meta">
           <span class="card-tag">Options</span>
@@ -550,6 +591,48 @@
         <h3 class="card-title">OCC Options Volume</h3>
         <p class="card-desc">Tracks 12 months of daily Options Clearing Corporation volume data across the market. A useful gauge of options activity and broad sentiment shifts over time.</p>
         <span class="card-url">occ.market-dashboards.com</span>
+      </a>
+      
+      <a class="card" href="https://charts.market-dashboards.com" target="_blank" rel="noopener">
+        <div class="card-meta">
+          <span class="card-tag">Chart</span>
+          <span class="card-arrow">
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5"/>
+            </svg>
+          </span>
+        </div>
+        <h3 class="card-title">Custom Chart Tool</h3>
+        <p class="card-desc">Custom chart tool using the previous trading day's closing prices and plots a 12 month daily chart or 5 year weekly charts with volatility adjusted Bollinger Bands, 21 and 63 Day EMA, volume, momentum, rate of change and stochasticRSI indicators for single stocks, ETFs and mutual funds.</p>
+        <span class="card-url">charts.market-dashboards.com</span>
+      </a>
+
+      <a class="card" href="https://corr.market-dashboards.com" target="_blank" rel="noopener">
+        <div class="card-meta">
+          <span class="card-tag">ETF Correlations</span>
+          <span class="card-arrow">
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5"/>
+            </svg>
+          </span>
+        </div>
+        <h3 class="card-title">Correlation grid</h3>
+        <p class="card-desc">The one month (30 days) and one week (5 days) correlations heatmap for the 70 ETFs and 35 Mutual Funds, using the previous day's closing prices. Pop-up 90 day (3 month) rolling chart of any pair.</p>
+        <span class="card-url">corr.market-dashboards.com</span>
+      </a>
+
+    <a class="card" href="https://backtest.market-dashboards.com/" target="_blank" rel="noopener">
+        <div class="card-meta">
+          <span class="card-tag">Portfolio Backtest</span>
+          <span class="card-arrow">
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5"/>
+            </svg>
+          </span>
+        </div>
+        <h3 class="card-title">Portfolio Backtest</h3>
+        <p class="card-desc">Back test your Mutual Fund and / or ETF portfolio performance over 10 or 15 years and compare performance against preset portfolio benchmarks or create your own benckmark.</p>
+        <span class="card-url">backtest.market-dashboards.com</span>
       </a>
 
       <a class="card" href="https://cta.market-dashboards.com/" target="_blank" rel="noopener">
@@ -580,76 +663,6 @@
         <span class="card-url">net-liquidity-psi.vercel.app</span>
       </a>
 
-      <a class="card" href="https://charts.market-dashboards.com" target="_blank" rel="noopener">
-        <div class="card-meta">
-          <span class="card-tag">Chart</span>
-          <span class="card-arrow">
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5"/>
-            </svg>
-          </span>
-        </div>
-        <h3 class="card-title">Custom Chart Tool</h3>
-        <p class="card-desc">Custom chart tool using the previous trading day's closing prices and plots a 12 month daily chart or 5 year weekly charts with volatility adjusted Bollinger Bands, 21 and 63 Day EMA, volume, momentum, rate of change and stochasticRSI indicators for single stocks, ETFs and mutual funds.</p>
-        <span class="card-url">charts.market-dashboards.com</span>
-      </a>
-
-      <a class="card" href="https://etf-volume-dashboard.vercel.app/" target="_blank" rel="noopener">
-        <div class="card-meta">
-          <span class="card-tag">ETF Volume</span>
-          <span class="card-arrow">
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5"/>
-            </svg>
-          </span>
-        </div>
-        <h3 class="card-title">ETF Volume tracker</h3>
-        <p class="card-desc">Ranking previous day's volume of a curated list of 70 ETFs against the average for the last 21 trading days and last 5 trading days. Sortable by asset class.</p>
-        <span class="card-url">etf-volume-neon.vercel.app</span>
-      </a>
-
-      <a class="card" href="https://corr.market-dashboards.com" target="_blank" rel="noopener">
-        <div class="card-meta">
-          <span class="card-tag">ETF Correlations</span>
-          <span class="card-arrow">
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5"/>
-            </svg>
-          </span>
-        </div>
-        <h3 class="card-title">Correlation grid</h3>
-        <p class="card-desc">The one month (30 days) and one week (5 days) correlations heatmap for the 70 ETFs and 35 Mutual Funds, using the previous day's closing prices. Pop-up 90 day (3 month) rolling chart of any pair.</p>
-        <span class="card-url">corr.market-dashboards.com</span>
-      </a>
-
-     <a class="card" href="https://breadth.market-dashboards.com/" target="_blank" rel="noopener">
-        <div class="card-meta">
-          <span class="card-tag">Market Breadth</span>
-          <span class="card-arrow">
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5"/>
-            </svg>
-          </span>
-        </div>
-        <h3 class="card-title">ETF Market Breadth Signal</h3>
-        <p class="card-desc">Using the Matrix Series momentum signal on a set of 21 ETFs with long and short versions, to determine market breadth on a 3 month rolling basis to reflect strength of the market.</p>
-        <span class="card-url">breadth.market-dashboards.com</span>
-      </a>
-
-    <a class="card" href="https://backtest.market-dashboards.com/" target="_blank" rel="noopener">
-        <div class="card-meta">
-          <span class="card-tag">Portfolio Backtest</span>
-          <span class="card-arrow">
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5"/>
-            </svg>
-          </span>
-        </div>
-        <h3 class="card-title">Portfolio Backtest</h3>
-        <p class="card-desc">Back test your Mutual Fund and / or ETF portfolio performance over 10 or 15 years and compare performance against preset portfolio benchmarks or create your own benckmark.</p>
-        <span class="card-url">backtest.market-dashboards.com</span>
-      </a>
-      
     </div>
   </section>
 
